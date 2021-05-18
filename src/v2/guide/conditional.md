@@ -187,6 +187,6 @@ new Vue({
 
 ## `v-if` 와 `v-for`
 
-<p class="tip"><code>v-if</code>와 <code>v-for</code>을 함께 사용하는 것을 권장하지 않습니다. 자세한 내용은 <a href="/v2/style-guide/#Avoid-v-if-with-v-for-essential">style guide</a>을 확인하십시오.</p>
+<p class="tip"><code>v-if</code>와 <code>v-for</code>을 함께 사용하는 것을 권장하지 않습니다. 자세한 내용은 <a href="/v2/style-guide/#v-if와-v-for를-동시에-사용하지-마세요-필수">스타일 가이드</a>을 확인하십시오.</p>
 
 `v-if`와 함께 사용하는 경우, `v-for`는  `v-if`보다 높은 우선순위를 갖습니다. 자세한 내용은 <a href="../guide/list.html#v-for-with-v-if">리스트 렌더링 가이드</a>를 확인하십시오.
