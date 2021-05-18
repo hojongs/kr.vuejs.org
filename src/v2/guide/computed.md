@@ -179,7 +179,7 @@ computed: {
 // ...
 ```
 
-이제 `vm.fullName = 'John Doe'`를 실행하면 설정자가 호출되고 `vm.firstName`과 `vm.lastName`이 그에 따라 업데이트 됩니다.
+이제 `vm.fullName = 'John Doe'`를 실행하면 setter 함수가 호출되고 `vm.firstName`과 `vm.lastName`이 그에 따라 업데이트 됩니다.
 
 ## watch 속성
 
