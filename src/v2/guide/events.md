@@ -197,7 +197,7 @@ methods: {
 <div v-on:click.self="doThat">...</div>
 ```
 
-<p class="tip">관련 코드가 동일한 순서로 생성되므로 수식어를 사용할 때 순서를 지정하세요. 다시말해 `v-on:click.prevent.self`를 사용하면 **모든 클릭**을 막을 수 있으며 `v-on:click.self.prevent`는 엘리먼트 자체에 대한 클릭만 방지합니다.</p>
+<p class="tip">관련 코드가 동일한 순서로 생성되므로 수식어를 사용할 때 순서를 지정하세요. 다시말해 <code>v-on:click.prevent.self</code>를 사용하면 <strong>모든 클릭</strong>을 막을 수 있으며 <code>v-on:click.self.prevent</code>는 엘리먼트 자체에 대한 클릭만 방지합니다.</p>
 
 > 2.1.4에 새로 추가됨
 
@@ -219,7 +219,7 @@ Vue는 [`addEventListener`의 `passive` option](https://developer.mozilla.org/en
 
 추가로, Vue는 `.passive` 수식어를 제공합니다. 특히 모바일 환경에서 성능향상에 도움이 됩니다. 예를 들어, 브라우저는 핸들러가 `event.preventDefault()`를 호출할지 알지 못하므로 프로세스가 완료된 후 스크롤 합니다. `.passive` 수식어는 이 이벤트가 기본 동작을 멈추지 않는다는 것을 브라우저에 알릴 수 있습니다.
 
-<p class="tip">`.passive`와 `.prevent`를 함께 사용하지 마세요.`.prevent`는 무시되고 브라우저는 오류를 발생시킬 것입니다. `.passive`는 당신이 이벤트의 기본 행동을 무시하지 _않기를 원하는_ 브라우저와 상호작용한다는 사실을 기억하세요.</p>
+<p class="tip"><code>.passive</code>와 <code>.prevent</code>를 함께 사용하지 마세요. <code>.prevent</code>는 무시되고 브라우저는 오류를 발생시킬 것입니다. <code>.passive</code>는 당신이 이벤트의 기본 행동을 무시하지 <u>않기를 원하는</u> 브라우저와 상호작용한다는 사실을 기억하세요.</p>
 
 ## 키 수식어
 
