@@ -226,7 +226,7 @@ Vue는 [`addEventListener`의 `passive` option](https://developer.mozilla.org/en
 키보드 이벤트를 청취할 때, 종종 공통 키 코드를 확인해야 합니다. Vue는 키 이벤트를 수신할 때 `v-on`에 대한 키 수식어를 추가할 수 있습니다.
 
 ``` html
-<!-- only call `vm.submit()` when the `key` is `Enter` -->
+<!-- `key`가 `Enter`일 때만 `vm.submit()`이 호출됩니다 -->
 <input v-on:keyup.enter="submit">
 ```
 
@@ -238,17 +238,17 @@ Vue는 [`addEventListener`의 `passive` option](https://developer.mozilla.org/en
 
 위의 예제에서 핸들러는 `$event.key === 'PageDown'` 일 때에만 호출됩니다.
 
-### Key Codes
+### 키 코드
 
-<p class="tip">The use of `keyCode` events [is deprecated](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode) and may not be supported in new browsers.</p>
+<p class="tip"><code>keyCode</code> 이벤트의 사용은 <a href="https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode">더 이상 권장되지 않으며</a> 새로운 브라우저에서는 지원되지 않을 수도 있습니다.</p>
 
-Using `keyCode` attributes is also permitted:
+`keyCode` 속성의 사용도 가능합니다:
 
 ``` html
 <input v-on:keyup.13="submit">
 ```
 
-Vue provides aliases for the most commonly used key codes when necessary for legacy browser support:
+Vue는 과거 브라우저 지원을 위해 필요 시 가장 많이 사용되는 키 코드들의 별칭(alias)들을 제공합니다.
 
 - `.enter`
 - `.tab`
