@@ -293,7 +293,7 @@ Vue.config.keyCodes.f1 = 112
 ```
 
 <p class="tip">
-수식어 키는 일반 키와 다르며 `keyup` 이벤트와 함께 사용되면 이벤트가 발생할 때 수식어 키가 눌려있어야 합니다. 즉,`keyup.ctrl`는 `ctrl`을 누른 상태에서 키를 놓으면 트리거됩니다. `ctrl` 키만 놓으면 트리거되지 않습니다.
+수식어 키는 일반 키와 다르며 <code>keyup</code> 이벤트와 함께 사용되면 이벤트가 발생할 때 수식어 키가 눌려있어야 합니다. 즉, <code>keyup.ctrl</code>는 <code>ctrl</code>을 누른 상태에서 키를 놓으면 트리거됩니다. <code>ctrl</code> 키만 놓으면 트리거되지 않습니다.
 </p>
 
 ### `.exact` 수식어
